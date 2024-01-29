@@ -14,9 +14,9 @@
 <body>
     <div class="app">
         <header>
-    <form class="search-form" >
-        <input type="text" placeholder="Enter your city" required class="search-input">
-        <input type="button" value="submit" class="submit-button">
+    <form class="search-form" id="search-form" >
+        <input type="text" placeholder="Enter your city" required class="search-input" id="search-input">
+        <input type="submit" value="search" class="submit-button" >
     </form>
 </header>
 <main>
@@ -35,7 +35,7 @@
         Humidity:<strong>54%</strong>, Wind:<strong>2km/hr</strong>
     </p>
     <h2 class="city-date">
-        <span class="city">Pretoria</span>
+        <span class="city" id="city">Pretoria</span>
         <div class="date">Monday 16:45</div> 
     </h2>
     </main>
@@ -44,5 +44,6 @@
     This page was coded by Ayisha, open sourced on Github and hosted on netlify
     </footer>
 </div>
+<script src="scrpt.js"></script>
 </body>
 </html>

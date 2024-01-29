@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
+    background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
     font-family: 'Roboto', sans-serif;
 }
 header{
@@ -7,13 +7,14 @@ header{
    
 }
 .app{
-    background: white;
+    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254)86.8%);
     max-width:  400px ;
     display: block;
     margin: 30px auto;
     border-radius: 10px;
     box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px;
     padding: 40px;
+}
 
 .search-input{
     background: #F9F7FE;
@@ -27,6 +28,7 @@ header{
     background-color: #5585b5;
     padding: 15px 20px;
     border: none;
+    width:35%;
     border-radius: 6px;
     color: white;
     margin-left: 5px;
@@ -58,6 +60,8 @@ header{
 }
 .date{
    margin-top: 18px;
+   font-weight: 500;
+   font-size: 20px;
 }
 footer{
     border-top: 1px solid #F9F7FE;
