@@ -38,13 +38,18 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.temperature-description{
+        color: #6892d5;
+}
 .temperature{
     font-size: 88px;
     line-height: 88px;
+    color: #005689;
 }
 .unit{
     position: relative;
     bottom: 35px;
+    color: #005689;
 }
 .icon{
     width: 150px;
@@ -54,10 +59,12 @@ header{
 .city-date{
     display: flex;
     justify-content: space-between;
+    color: #005689;
 }
 .city{
     font-size: 38px;
     line-height: 48px;
+    color: #005689;
 }
 .date{
    margin-top: 18px;
@@ -71,4 +78,7 @@ footer{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
     font-weight: 500;
+}
+strong{
+    color: #3b4a6b;
 }
