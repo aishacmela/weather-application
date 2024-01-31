@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <link rel="stylesheet" href="styles.css">
     <title>my weather application</title>
 </head>
@@ -22,21 +23,21 @@
 <main>
     <span class="temperature-details">
     <h1>
-        <span class="temperature">22</span>
-        <span class="unit">°C</span>
+        <span class="temperature" id="temperature-value">22</span>
+        <span class="unit" id="unit">°C</span>
     </h1>
-    <div class="icon">
-        ☀
+    <div class="icon" id="icon">
+        🌤
     </div>
 </span>
     <p class="temperature-description">
-     Partly cloudy
+     <span id="decsription">Partly cloudy</span>
         <br/>
-        Humidity:<strong>54%</strong>, Wind:<strong>2km/hr</strong>
+        Humidity:<strong id="humidity">52%</strong>, Wind:<strong id="wind">22km/hr</strong>
     </p>
     <h2 class="city-date">
         <span class="city" id="city">Pretoria</span>
-        <div class="date">Monday 16:45</div> 
+        <div class="date" id="time">Monday 16:30</div> 
     </h2>
     </main>
     <footer>
