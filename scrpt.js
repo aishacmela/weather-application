@@ -1,14 +1,18 @@
 function updateWeather(response){
-    let temperatureElement = document.querySelector("#temperature-value")
+    let temperatureElement = document.querySelector("#temperature-value");
     let cityElement = document.querySelector("#city");
+    let descriptionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    let iconElement = document.querySelector("#icon")
+    iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" alt= class="weather-app-icon"
+            >`
 
-   
-    
+    windElement.innerHTML = `${response.data.wind.speed}km/h`;
+    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+    descriptionElement.innerHTML = response.data.condition.description;
     cityElement.innerHTML = response.data.city;
-    temperatureElement.innerHTML = Math.round(response.data.temperature.current)
-
-
-
+    temperatureElement.innerHTML = Math.round(response.data.temperature.current);
 }
 
 

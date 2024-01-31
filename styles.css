@@ -47,8 +47,9 @@ header{
     bottom: 35px;
 }
 .icon{
-    font-size: 90px;
-    margin-right: 30px;
+    width: 150px;
+    height: 88px ;
+   
 }
 .city-date{
     display: flex;
