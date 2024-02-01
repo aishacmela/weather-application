@@ -99,15 +99,15 @@ a{
     line-height: 16px;
     margin-bottom: 10px;
 }
-.forecast-weather-img{
+.forecast-weather-icon{
     font-size: 30px;
     text-align: center;
 }
    
-.forecast-weather-temperature{
+.forecast-weather-temperatures{
     font-size: 16px;
 
 }
-.weather-forecast-temperature-min{
+.forecast-weather-temperature-min{
     opacity: 0.5;
 }
