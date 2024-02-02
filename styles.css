@@ -1,5 +1,7 @@
 body{
-    background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/434/original/7d313a3e1adf3ae6541a616a25726cff.jpg?1706908506);
+    background-color: #cccccc;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
 header{
@@ -7,7 +9,9 @@ header{
    
 }
 .app{
-    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254)86.8%);
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/434/original/7d313a3e1adf3ae6541a616a25726cff.jpg?1706908506);
+    background-color: #cccccc;
+    background-size: cover;
     max-width:  400px ;
     display: block;
     margin: 20px auto;
@@ -100,14 +104,18 @@ a{
     margin-bottom: 10px;
 }
 .forecast-weather-icon{
-    font-size: 30px;
-    text-align: center;
+    width: 88px ;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
 }
    
 .forecast-weather-temperatures{
     font-size: 16px;
+    position: relative;
+    left: 20px;
 
 }
 .forecast-weather-temperature-min{
-    opacity: 0.5;
+    opacity: 0.6;
 }
