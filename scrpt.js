@@ -1,5 +1,5 @@
 function updateWeather(response){
-    let temperatureElement = document.querySelector("#temperature-value");
+    let temperatureElement = document.querySelector ("#temperature-value");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
@@ -21,8 +21,6 @@ function updateWeather(response){
 function formatDate(date){
     let minutes = date.getMinutes();
     let hours = date.getHours();
-    
-
     let days = [
      "Sunday",
      "Monday", 
@@ -43,14 +41,12 @@ function formatDate(date){
     return `${day} ${hours}:${minutes}`;
 }
 
-
 function searchcity(city){
- let apiKey = `4ce023e4f48aaf8bd6a4cb7eo6dbd3ft`
+ let apiKey = `4ce023e4f48aaf8bd6a4cb7eo6dbd3ft`;
  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
-axios.get(apiUrl).then(updateWeather)
+axios.get(apiUrl).then(updateWeather);
 }
-
 
 function search(event){
     event.preventDefault();
@@ -62,8 +58,6 @@ function search(event){
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
 
-
-
 function getForecast(city){
     let apiKey = "4ce023e4f48aaf8bd6a4cb7eo6dbd3ft";
     let apiUrl= `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
@@ -71,8 +65,16 @@ function getForecast(city){
 }
 
 function formatDay(timestamp){
-    let date = new Date(timestamp *1000)
-    let days = ["Sun","Mon","Tue","Wed", "Thu", "Fri", "Sat" ];
+    let date = new Date(timestamp *1000);
+    let days = [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu", 
+        "Fri",
+        "Sat" 
+    ];
 
     return days[date.getDay()]
 }
@@ -88,8 +90,7 @@ function displayForecast(response){
         ` <div class="weather-forecast-day">
    <div class="forecast-weather-date">${formatDay(day.time)}</div>
    <div class="forecast-weather-icon">
-   <img src = "${day.condition.icon_url}"  class="forecast-weather-icon" />
-   </div>
+   <img src = "${day.condition.icon_url}"  class="forecast-weather-icon" /></div>
    <div class="forecast-weather-temperatures ">
     <span class="forecast-weather-temperature-max">
     <strong>${Math.round(day.temperature.maximum)}°</strong>
@@ -100,7 +101,7 @@ function displayForecast(response){
 }
 });
 let forecastElement = document.querySelector("#forecast");
-forecastElement.innerHTML = forecastHtml
+forecastElement.innerHTML = forecastHtml;
 }
 
 searchcity("Cape Town");
