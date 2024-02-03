@@ -89,11 +89,11 @@ footer{
    
     font-weight: 500;
 }
-p strong,
-a{
+p strong{
     color: #43093f;
 }
 a{
+    color: blue;
     text-decoration: none;
     
 }
